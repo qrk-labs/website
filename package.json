@@ -1,0 +1,41 @@
+{
+  "name": "bun-react-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.tsx",
+  "module": "src/index.tsx",
+  "scripts": {
+    "dev": "bun --hot src/index.tsx",
+    "start": "NODE_ENV=production bun src/index.tsx",
+    "build": "bun run build.ts"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^4.1.0",
+    "@radix-ui/react-label": "^2.1.2",
+    "@radix-ui/react-select": "^2.1.6",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@tailwindcss/postcss": "^4.1.7",
+    "autoprefixer": "^10.4.21",
+    "bun-plugin-tailwind": "^0.0.14",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.511.0",
+    "postcss": "^8.5.3",
+    "react": "^19",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.54.2",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss": "^4.0.6",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.25.32"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "front-matter": "^4.0.2"
+  }
+}
