@@ -40,7 +40,9 @@ const server = serve({
         const path = url.pathname.slice(1);
         const {stream, component} = await QRKRouter(`./src/pages/${path}`, req)
         const reactStream = await stream
-        return new Response(concatStreams(reactStream, streamFromString(component)))
+        return new Response(concatStreams(reactStream, streamFromString(component)), { headers: {
+          "content-type": "text/html"
+        } })
       }, 
     },
 
